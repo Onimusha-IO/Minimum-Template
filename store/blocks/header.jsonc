@@ -1,0 +1,195 @@
+{
+  "header": {
+    "blocks": [ "header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#test", "sticky-layout#desktop"
+    ]
+  },
+
+  "flex-layout.row#test":{
+    "props":{
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": true,
+      "blockClass": "topBar"
+    },
+    "children":[
+      "flex-layout.col#first",
+      "flex-layout.col#second",
+      "flex-layout.col#third"
+    ]
+  },
+
+
+  "flex-layout.col#first":{
+    "props": {
+      "verticalAlign":	"middle"
+  },
+    "children":[
+      "rich-text#msg"
+    ]
+  },
+  "rich-text#msg":{
+    "props":{
+      "text": "Una empresa **cmpc**",
+      "blockClass": "msg"
+    }
+  },
+
+
+  "flex-layout.col#second":{
+    "props": {
+        "verticalAlign":	"middle"
+    },
+    "children":[
+      "flex-layout.row#help"
+    ]
+  },
+  "flex-layout.row#help":{
+    "props":{
+      "colGap": 8,
+      "horizontalAlign":	"center",
+      "colSizing":"auto"
+    },
+    "children": ["flex-layout.col#center",
+    "flex-layout.col#contact",
+    "flex-layout.col#safe",
+    "flex-layout.col#terms"]
+  },
+  "flex-layout.col#center":{
+    "props": {
+      "verticalAlign":	"middle"
+  },
+    "children":["rich-text#centro"]
+  },
+  "rich-text#centro":{
+    "props":{
+      "text": "Centro de ayuda",
+      "blockClass": "help"
+    }
+  },
+  "flex-layout.col#contact":{
+    "props": {
+      "verticalAlign":	"middle"
+  },
+    "children":["gbrachotest#contact"]
+  },
+  "gbrachotest#contact": {
+    "props":{
+      "text": "Contacto",
+      "icon": "hpa-telemarketing"
+    }
+  },
+  "flex-layout.col#safe":{
+    "props": {
+      "verticalAlign":	"middle"
+  },
+    "children":["gbrachotest#safe"]
+  },
+  "gbrachotest#safe": {
+    "props":{
+      "text": "100% Seguro",
+      "icon": "mpa-eyesight--filled--off"
+    }
+  },
+  "flex-layout.col#terms":{
+    "props": {
+      "verticalAlign":	"middle"
+  },
+    "children":["gbrachotest#terms"]
+  },
+  "gbrachotest#terms": {
+    "props":{
+      "text": "Términos y Condiciones",
+      "icon": "mpa-edit--filled"
+    }
+  },
+
+
+  "flex-layout.col#third":{
+    "props":{
+      "horizontalAlign":	"right",
+      "verticalAlign":	"middle"    
+    },
+    "children":["gbrachotest#colab"]
+  },
+  "gbrachotest#colab": {
+    "props":{
+      "text": "Colaboradores",
+      "icon": "inf-star"
+    }
+  },
+
+
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop"]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
+      "width": "80"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": []
+  }
+}
