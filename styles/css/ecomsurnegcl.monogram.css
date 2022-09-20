@@ -4,5 +4,12 @@
     align-items: center;
     gap: 8px;
     white-space: nowrap;
+    font-size: 5;
     color: white;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+    filter: invert(1)
 }

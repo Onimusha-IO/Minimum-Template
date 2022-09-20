@@ -65,48 +65,48 @@
     "props": {
       "verticalAlign":	"middle"
   },
-    "children":["rich-text#centro"]
+    "children":["monogram#center"]
   },
-  "rich-text#centro":{
+  "monogram#center":{
     "props":{
-      "text": "Centro de ayuda",
-      "blockClass": "help"
+      "label": "Centro de ayuda",
+      "icon": "call-center-worker"
     }
   },
   "flex-layout.col#contact":{
     "props": {
       "verticalAlign":	"middle"
   },
-    "children":["gbrachotest#contact"]
+    "children":["monogram#contact"]
   },
-  "gbrachotest#contact": {
+  "monogram#contact": {
     "props":{
-      "text": "Contacto",
-      "icon": "hpa-telemarketing"
+      "label": "Contacto",
+      "icon": "chat-conversation"
     }
   },
   "flex-layout.col#safe":{
     "props": {
       "verticalAlign":	"middle"
   },
-    "children":["gbrachotest#safe"]
+    "children":["monogram#safe"]
   },
-  "gbrachotest#safe": {
+  "monogram#safe": {
     "props":{
-      "text": "100% Seguro",
-      "icon": "mpa-eyesight--filled--off"
+      "label": "100% Seguro",
+      "icon": "safe-shield-protection"
     }
   },
   "flex-layout.col#terms":{
     "props": {
       "verticalAlign":	"middle"
   },
-    "children":["gbrachotest#terms"]
+    "children":["monogram#terms"]
   },
-  "gbrachotest#terms": {
+  "monogram#terms": {
     "props":{
-      "text": "Términos y Condiciones",
-      "icon": "mpa-edit--filled"
+      "label": "Términos y Condiciones",
+      "icon": "edit-terms"
     }
   },
 
@@ -116,12 +116,12 @@
       "horizontalAlign":	"right",
       "verticalAlign":	"middle"    
     },
-    "children":["gbrachotest#colab"]
+    "children":["monogram#colab"]
   },
-  "gbrachotest#colab": {
+  "monogram#colab": {
     "props":{
-      "text": "Colaboradores",
-      "icon": "inf-star"
+      "label": "Colaboradores",
+      "icon": "team-add"
     }
   },
 
