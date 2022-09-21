@@ -56,10 +56,11 @@
       "horizontalAlign":	"center",
       "colSizing":"auto"
     },
-    "children": ["flex-layout.col#center",
-    "flex-layout.col#contact",
-    "flex-layout.col#safe",
-    "flex-layout.col#terms"]
+    "children": [
+      "flex-layout.col#center",
+      "flex-layout.col#contact",
+      "flex-layout.col#safe",
+      "flex-layout.col#terms"]
   },
   "flex-layout.col#center":{
     "props": {
@@ -192,4 +193,5 @@
   "drawer": {
     "children": []
   }
+  
 }

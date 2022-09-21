@@ -1,7 +1,7 @@
 {
   "store.home": { 
     "blocks": [
-      "stack-layout"
+      "stack-layout", "info-card"
     ]
   },
   "stack-layout":{
@@ -9,10 +9,23 @@
   },
   "rich-text": { 
     "props": { 
-      "text": "VTEX Store Framework",
+      "text": "**Hello** VTEX Store Framework",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1"
     }
-  }
+  },
+    "info-card":{
+      "props": {
+        "id": "info-card-example",
+        "isFullModeStyle": false,
+        "textPosition": "right",
+        "imageUrl": "https://picsum.photos/600/300",
+        "headline": "Ecommerce Sales!",
+        "callToActionText": "Discover Ecomsur",
+        "callToActionUrl": "/sale/d",
+        "blockClass": "info-card-example",
+        "textAlignment": "center"
+      }
+    }
   }
